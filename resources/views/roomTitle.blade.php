@@ -14,7 +14,8 @@
         <style>
             html, body {
                 background-color: #fff;
-				background-image: url('../images/schuman1080.jpg');
+
+				
                 color: black;
                 /*font-family: 'Raleway', sans-serif;*/
 				font-family : 'Arial';
@@ -23,10 +24,18 @@
 				height : 100%;
 				margin : 0;
 				padding : 0;
-				background-size: cover;
+				background-size: contain;
 				background-repeat : no-repeat;
 				overflow : hidden;
             }
+
+			.occupied{
+				background-image: url('../images/schuman1080bas.jpg');
+			}
+
+			.empty{
+				background-image: url('../images/schuman1080.jpg');
+			}
 
             .full-height {
                 height: 100vh;
@@ -74,7 +83,7 @@
             }
         </style>
     </head>
-    <body>
+    <body @if (sizeof($rooms) > 0) class= "occupied" @else class = "empty" @endif>
         <div class="flex-center position-ref full-height">
             <div class="content">
 				@foreach ($rooms as $room)

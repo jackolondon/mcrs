@@ -1,17 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app",
-    "\\app\\Http",
     "\\app\\Http\\Controllers",
-    "\\resources\\assets",
-    "\\resources\\assets\\sass",
-    "\\resources\\views",
-    "\\resources\\views\\planeLux",
-    "\\resources\\views\\planeMetz",
-    "\\resources\\views\\room",
-    "\\resources\\views\\train"
+    "\\config"
   ],
-  "SelectedNode": "\\app\\Http\\Controllers\\planeLuxController.php",
+  "SelectedNode": "\\config\\app.php",
   "PreviewInSolutionExplorer": false
 }
